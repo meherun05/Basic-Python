@@ -35,6 +35,18 @@ class School :
             student = Student(name , 'C',id)
             self.students.append(student)
             return f'{name} is enroll with {id}, extra fee {fee - 6500}'
+    def __repr__(self):
+        print('welcome to ',self.name)
+        print('-------------------------')
+        print('Meet out teachers')
+        for teacher in self.teachers :
+            print(teacher)
+        print('-------------------------')
+        print('Meet our students')
+        for student in self.students:
+            print(student)
+        print('-------------------------')
+        return 'Thank you for enrolling '
 
 
 # meherun = Student('Meherun',1,12)
@@ -42,3 +54,14 @@ class School :
 # print(meherun)
 # print(shahin)
 
+phitron = School('Phitron')
+phitron.enroll('Shahin',8000)
+phitron.enroll('Meherun',7000)
+phitron.enroll('Meherab',6500)
+
+phitron.addTeacher('Jankar sir','Python')
+phitron.addTeacher('Pias vai','DS')
+phitron.addTeacher('Atiqur vai','Algo')
+phitron.addTeacher('Arif vai','Database')
+
+print(phitron)
