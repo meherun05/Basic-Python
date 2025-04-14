@@ -13,7 +13,7 @@ class HardDrive:
 # Computer "has a" CPU
 # Computer "has a" RAM
 # Computer "has a" Hard Drive
-class Computer:
+class Computer: 
     def __init__(self,cores,memorySize, hardDiskCapacity):
         self.cpu = CPU(cores)
         self.ram = RAM(memorySize)
