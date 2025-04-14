@@ -17,7 +17,7 @@ class Programmer(Person):
     def __add__(self,other):
         return self.age + other.age
     
-    def __mul__(self,other):
+    def __mul__(self,other): # overloading 
         return self.weight * other.weight
 
 shahin = Programmer('Shahin',21,16,68)
